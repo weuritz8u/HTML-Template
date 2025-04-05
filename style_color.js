@@ -1,3 +1,5 @@
+// script written by Shadowdara
+
 let theme_mode = 1
 var mode = localStorage.getItem('mode')
 
