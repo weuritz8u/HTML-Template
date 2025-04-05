@@ -1,10 +1,20 @@
 /* File written by Shadowdara */
 
+* {
+    all: unset;
+}
+
 :root {
     --box1-color: rgb(216, 216, 216); /* middle box */
     --box2-color: rgb(235, 235, 235); /* left side bar box */
     --bg-color: white;
     --text-color: black;
+    --link-color: blue;
+    --linktransform-color: #ff0000;
+}
+
+head {
+    display: none;
 }
 
 body {
@@ -14,6 +24,78 @@ body {
     word-break: break-all;
     background-color: var(--bg-color);
     color: var(--text-color);
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+button {
+    appearance: auto;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    cursor: default;
+    box-sizing: border-box;
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+li {
+    display: list-item;
+    unicode-bidi: isolate;
 }
 
 .column {
@@ -26,6 +108,14 @@ aside {
     background-color: var(--box1-color);
     position: fixed;
     height: 100vh;
+}
+
+aside ul {
+
+}
+
+aside ul li {
+
 }
 
 .aside {
@@ -49,33 +139,50 @@ main {
     padding-right: 5%;
     padding-left: 5%;
     padding-top: 1%;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     margin-bottom: 25px;
 }
 
-nav h2 {
+.nav h2 {
     margin: 0;
 }
 
-nav ul {
+.nav .ul1 {
     margin-top: 0;
     list-style-type: none;
     padding: 0;
 }
 
-nav ul li {
+.nav .ul2 {
+    margin-top: 0;
+    list-style-type:disc;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.nav li {
     margin: 0 15px;
 }
 
+.pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 17px;
+}
+
 a {
-    color: blue;
+    color: var(--link-color);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #ff0000;
+    color: var(--linktransform-color);
+}
+
+button {
+    margin-bottom: 15px;
 }
 
 @media (max-width:1280px) {

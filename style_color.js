@@ -6,6 +6,9 @@ function switch_mode() {
         document.documentElement.style.setProperty("--box2-color", "rgb(47, 47, 47)");
         document.documentElement.style.setProperty("--bg-color", "black");
         document.documentElement.style.setProperty("--text-color", "white");
+        document.documentElement.style.setProperty("--link-color", "rgb(255, 172, 116)");
+        document.documentElement.style.setProperty("--linktransform-color", "rgb(255, 102, 0)");
+        document.getElementById("toggle_mode").innerText = "Lightmode";
         theme_mode += 1
     }
     else if (theme_mode == 2) {
@@ -13,6 +16,9 @@ function switch_mode() {
         document.documentElement.style.removeProperty("--box2-color");
         document.documentElement.style.removeProperty("--bg-color");
         document.documentElement.style.removeProperty("--text-color");
+        document.documentElement.style.removeProperty("--link-color");
+        document.documentElement.style.removeProperty("--linktransform-color");
+        document.getElementById("toggle_mode").innerText = "Darkmode";
         theme_mode = 1
     }
 }
