@@ -1,10 +1,19 @@
 /* File written by Shadowdara */
 
+:root {
+    --box1-color: rgb(216, 216, 216); /* middle box */
+    --box2-color: rgb(235, 235, 235); /* left side bar box */
+    --bg-color: white;
+    --text-color: black;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     word-wrap: break-word;
     word-break: break-all;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .column {
@@ -14,7 +23,7 @@ body {
 aside {
     margin-left: 0;
     width: 15%;
-    background-color: rgb(216, 216, 216);
+    background-color: var(--box1-color);
     position: fixed;
     height: 100vh;
 }
@@ -26,17 +35,22 @@ aside {
 }
 
 main {
+    width: 50%;
+    margin-bottom: 3%;
     margin-top: 3.5%;
     margin-left: 5%;
-    background-color: rgb(235, 235, 235);
+}
+
+.new_block {
+    font-size: 20px;
+    background-color: var(--box2-color);
+    line-height: 1.8;
+    width: 100%;
     padding-right: 5%;
     padding-left: 5%;
     padding-top: 1%;
-    padding-bottom: 1%;
-    margin-bottom: 3%;
-    font-size: 20px;
-    line-height: 1.8;
-    width: 50%;
+    padding-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 nav h2 {
