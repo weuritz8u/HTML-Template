@@ -53,6 +53,17 @@ h2 {
     unicode-bidi: isolate;
 }
 
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
 p {
     display: block;
     margin-block-start: 1em;
@@ -111,7 +122,8 @@ aside {
 }
 
 aside ul {
-
+    list-style-type: none;
+    padding-inline-start: 20px;
 }
 
 aside ul li {
@@ -155,7 +167,7 @@ main {
 
 .nav .ul2 {
     margin-top: 0;
-    list-style-type:disc;
+    list-style-type: disc;
     padding: 0;
     margin-left: 10px;
 }

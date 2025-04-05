@@ -1,4 +1,10 @@
 let theme_mode = 1
+var mode = localStorage.getItem('mode')
+
+if (mode == 'dark') {
+    theme_mode = 1
+    switch_mode()
+}
 
 function switch_mode() {
     if (theme_mode == 1) {
@@ -10,6 +16,7 @@ function switch_mode() {
         document.documentElement.style.setProperty("--linktransform-color", "rgb(255, 102, 0)");
         document.getElementById("toggle_mode").innerText = "Lightmode";
         theme_mode += 1
+        localStorage.setItem('mode', 'dark');
     }
     else if (theme_mode == 2) {
         document.documentElement.style.removeProperty("--box1-color");
@@ -20,5 +27,6 @@ function switch_mode() {
         document.documentElement.style.removeProperty("--linktransform-color");
         document.getElementById("toggle_mode").innerText = "Darkmode";
         theme_mode = 1
+        localStorage.setItem('mode', 'light');
     }
 }
