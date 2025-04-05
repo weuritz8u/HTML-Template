@@ -120,11 +120,12 @@ li {
 code {
     font-family: monospace;
     background-color: var(--box1-color);
-    padding: 4px 4px;
+    padding: 1px 4px;
     font-size: 90%;
     display: inline-block;
     border-radius: 10px;
 
+    margin: 2px
     /* margin hier noch einfügen!!! */
 
 }
@@ -148,7 +149,7 @@ aside ul {
 }
 
 aside ul li {
-    line-height: 35px;
+    line-height: 50px;
     font-size: 20px;
 }
 
@@ -218,6 +219,8 @@ a:hover {
 button {
     margin-bottom: 15px;
 }
+
+/* UPDATE MOBILE VIEWPORT! */
 
 @media (max-width:1280px) {
     aside {
