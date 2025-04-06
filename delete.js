@@ -21,9 +21,11 @@ const template_content = `<!-- script written by Shadowdara -->
         <main>
             <div class="new_block">
                 <h1>Main Text</h1>
+                <button onclick="switch_mode()" id="toggle_mode">Darkmode</button>
             </div>
         </main>
     </div>
+    <script defer src="style_color.js"></script>
 </body>
 </html>`;
 
