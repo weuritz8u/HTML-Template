@@ -13,7 +13,9 @@ const template_content = `<!-- script written by Shadowdara -->
 <body>
     <div class="column">
         <aside>
-            <p>Sidebar</p>
+            <ul>
+                <li><a>Sidebar</a></li>
+            </ul>
         </aside>
         <div class="aside"></div>
         <main>
