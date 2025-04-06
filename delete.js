@@ -26,3 +26,14 @@ const template_content = `<!-- script written by Shadowdara -->
 </html>`;
 
 document.getElementById('template').innerText = template_content
+
+function f_copy_template() {
+
+    navigator.clipboard.writeText(template_content).then(function() {
+        console.log("Text copied succesfully!");
+        document.getElementById("copy_template").innerText = "Template Copied!";
+    })
+    .catch(function(error) {
+        console.error("Error while copying: ", error);
+    });
+}
