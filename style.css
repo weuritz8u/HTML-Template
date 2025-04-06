@@ -120,7 +120,7 @@ li {
 code {
     font-family: monospace;
     background-color: var(--box1-color);
-    padding: 1px 4px;
+    padding: 0px 4px;
     font-size: 90%;
     display: inline-block;
     border-radius: 10px;

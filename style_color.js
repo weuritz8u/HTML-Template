@@ -1,7 +1,34 @@
 // script written by Shadowdara
 
+const template_content = `<!-- script written by Shadowdara -->
+<!-- MIT LICENSE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Template</title>
+</head>
+<body>
+    <div class="column">
+        <aside>
+            <p>Sidebar</p>
+        </aside>
+        <div class="aside"></div>
+        <main>
+            <div class="new_block">
+                <h1>Main Text</h1>
+            </div>
+        </main>
+    </div>
+</body>
+</html>`;
+
 let theme_mode = 1
 var mode = localStorage.getItem('mode')
+
+document.getElementById('template').innerText = template_content
 
 if (mode == 'dark') {
     theme_mode = 1
